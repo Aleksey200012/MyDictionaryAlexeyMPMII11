@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Word</title>
+	<style>
+	html {
+    height: 100%;
+}
+
+body {
+    background-color: LightYellow;
+}
+
+form {
+    width: 50%;
+    margin: 25px auto;
+    background-color: green;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+	margin-top: 15%;
+}
+
+input[type=button] {
+    width: 50%;
+    background-color: maroon;
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+input[type=button]:hover {
+  background-color: blue;
+}
+	</style>
+</head>
+<body>
+
+<form action="" method="post">
+
+    {% csrf_token %}
+    {{ form }}
+
+
+    <input type="button" onclick = "location.href = 'file:///C:/Users/home_PC/Documents/Dictionary/home.html';" value="Submit"/>
+
+</form>
+
+</body>
+</html>

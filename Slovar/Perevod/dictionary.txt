@@ -1,0 +1,5 @@
+drawbacks-препятствие
+circuit-схема
+dimension-уменьшение
+field-поле
+page-страница

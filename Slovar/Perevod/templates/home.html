@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Dictionary</title>
+    <style>
+	html {
+    height: 100%;
+}
+
+body {
+    background-color: LightYellow;
+}
+
+.links {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+    background-color: navy;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+	</style>
+</head>
+<body>
+
+    <div class="links">
+        <a href="{% url 'words_list' %}">
+            Список слов
+        </a>
+
+        <a href="{% url 'add_word' %}">
+            Добавить новое слово
+        </a>
+    </div>
+
+</body>
+</html>
